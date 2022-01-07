@@ -33,6 +33,7 @@ header {
 header > h1 {
     color: white;
     padding-bottom: 20px;
+    margin-left: 10px;
 }
 
 nav {
@@ -66,8 +67,18 @@ section {
     padding-top: 20px;
 }
 
-div#photo {
+section > h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
 
+section > div.card {
+    border: 1px solid white;
+}
+
+section > div.card-body {
+    border: 1px solid white;
 }
 
 footer {
