@@ -81,6 +81,11 @@ section > div.card-body {
     border: 1px solid white;
 }
 
+section > article#lista-roupas {
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
 footer {
     background-color: var(--cor2);
 }
