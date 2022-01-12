@@ -86,6 +86,28 @@ section > article#lista-roupas {
     margin: 10px;
 }
 
+form#forms {
+    line-height: 1.5em;
+    margin-left: 10px;
+    margin: auto;
+    width: 400px;
+    height: 150px;
+    padding-left: 10px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.253);;
+}
+
+form > h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+form > input {
+    text-align: center;
+}
+
 footer {
     background-color: var(--cor2);
 }
