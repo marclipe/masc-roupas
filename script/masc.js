@@ -1,16 +1,16 @@
 function enviar() {
 
-    var nome = window.document.getElementById('txtnome') 
-
-    var res = window.document.querySelector('section#res')
-    if(nome.value.lenght == 0 ) {
+    var nome = window.document.getElementById('nome') 
+    var email = window.document.getElementById('email')
+    var num = window.document.getElementById('num')
+    var res = window.document.querySelector('article#res')
+    if (nome.value.length == 0 || email.value.length == 0 || num.value.length == 0) {
         window.alert('ERRO - Campo vazio')
     }
     else {
-        window.alert(`Ok ${nam} vamos entrar em contato!`)
+        res.innerHTML = `<strong>Obrigado! vamos entrar em contato assim que puder!</strong>`
     }
-
-    res.innerHTML = `Ok ${nome} vamos entrar em contato assim que puder!`
+    res.style.textAlign = 'center'
     
 }
 

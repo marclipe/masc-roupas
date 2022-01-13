@@ -57,9 +57,28 @@ nav > a:hover {
 }
 
 section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+section.imagem {
+    background-color: rgb(50, 50, 50);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url(../imagens/roupa1.jpg);
+    background-position: right center;
+}
+
+section#01 {
+    background-image: url('../imagens/foto-header.jpg');
+}
+
+main {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
-    max-width: 1000px;
-    min-height: 300px;
     margin: auto;
     color: white;
     border-radius: 0px 0px 10px 10px;
@@ -67,21 +86,21 @@ section {
     padding-top: 20px;
 }
 
-section > h2 {
+main > h2 {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 10px;
 }
 
-section > div.card {
+main > div.card {
     border: 1px solid white;
 }
 
-section > div.card-body {
+main > div.card-body {
     border: 1px solid white;
 }
 
-section > article#lista-roupas {
+main > article#lista-roupas {
     padding-bottom: 20px;
     margin: 10px;
 }
@@ -91,11 +110,9 @@ form#forms {
     margin-left: 10px;
     margin: auto;
     width: 400px;
-    height: 150px;
+    height: 175px;
     padding-left: 10px;
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
-    border-radius: 10px;
-    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.253);;
 }
 
 form > h3 {
@@ -106,6 +123,10 @@ form > h3 {
 
 form > input {
     text-align: center;
+}
+
+article#res {
+    padding-bottom: 20px;
 }
 
 footer {
