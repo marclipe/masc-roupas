@@ -5,6 +5,7 @@
     --cor4: #05DBF2; 
 
     --font-site: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --font-imagem:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
 body {
@@ -59,30 +60,41 @@ nav > a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
+    line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font-imagem);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.imagem {
     background-color: rgb(50, 50, 50);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
     background-size: cover;
     background-attachment: fixed;
 }
 
-section#img01 {
-    background-image: url(../imagens/roupa1.jpg);
-    background-position: right center;
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.521);
+    text-shadow: 1px 1px 0px black;
 }
 
-section#01 {
-    background-image: url('../imagens/foto-header.jpg');
+section#img01 {
+    background-image: url(../imagens/roupa-sapato.jpg);
+    background-position: center center;
 }
+
 
 main {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
     margin: auto;
-    color: white;
-    border-radius: 0px 0px 10px 10px;
-    margin-bottom: 20px;
+    color: white;    
     padding-top: 20px;
 }
 
@@ -90,14 +102,6 @@ main > h2 {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 10px;
-}
-
-main > div.card {
-    border: 1px solid white;
-}
-
-main > div.card-body {
-    border: 1px solid white;
 }
 
 main > article#lista-roupas {
@@ -127,6 +131,10 @@ form > input {
 
 article#res {
     padding-bottom: 20px;
+}
+
+main#final {
+    background-color: var(--cor2);
 }
 
 footer {
