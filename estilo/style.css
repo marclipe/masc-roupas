@@ -27,34 +27,48 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     padding-top: 50px;
 }
 
 header > h1 {
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     margin-left: 10px;
 }
 
 nav {
-    padding: 10px;
+    background-color: white;
+    height: 3rem;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-nav > a {
-    box-shadow: 0px 7px 7px black;
-    background-color: var(--cor4);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: 0.5;
+.nav-center {
+   width: 90vw; 
+   max-width: 620px;
 }
 
-nav > a:hover {
-    background-color: var(--cor1);
+
+.nav-links {
+    display: flex;
+    
+}
+
+nav a {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
     color: var(--cor2);
+    letter-spacing: 0.1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: hsl(205, 78%, 60%);
 }
 
 section {
