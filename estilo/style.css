@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 :root {
     --cor1: #A69665;
     --cor2: #07418C;
@@ -6,16 +13,12 @@
 
     --font-site: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --font-imagem:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    --font-card: 'Poppins', sans-serif; 
 }
 
 body {
     background-color: var(--cor4);
     font-family: var(--font-site);
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
 }
 
 
@@ -69,6 +72,34 @@ nav a {
 
 nav a:hover {
     color: hsl(205, 78%, 60%);
+}
+
+section.cards {
+    background: #F6F9FF; 
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+}
+
+section.cards {
+    display: flex;
+    padding: 32px;
+}
+
+section.cards  section.roupa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
 }
 
 section {
@@ -152,7 +183,7 @@ main#final {
 }
 
 footer {
-    background-color: var(--cor2);
+    background-color: var(--cor4);
 }
 
 footer > p {
