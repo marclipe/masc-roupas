@@ -102,7 +102,61 @@ section.cards  section.roupa {
     margin-left: 32px;
 }
 
-section {
+section.cards section.roupa:first-child {
+    margin-left: 0;
+}
+
+section.cards section.roupa .icon {
+    width: 64px;
+    height: 64px;
+}
+
+section.cards section.roupa img {
+    width: 100%;
+}
+
+section.cards section.roupa span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+section.cards section.roupa button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: var(--cor2);
+}
+
+/*Aqui usamos duas class e foram especificadas no section
+
+...*/
+
+/*Agora as sombras par o card inteiro
+...*/
+
+@media screen and (max-width: 720px) {
+    section.cards {
+        flex-direction: column;
+    } 
+    section.cards section.roupa {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    section.cards section.roupa:last-child {
+        margin-bottom: 0;
+    }
+    section.cards section.roupa button {
+        font-size: 70%;
+    }
+}
+
+section.imagem {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -111,7 +165,7 @@ section {
     font-size: 3.5vw;
 }
 
-section > p {
+section.imagem > p {
     padding-bottom: 2em;
 }
 
@@ -130,7 +184,7 @@ section.imagem > p {
     text-shadow: 1px 1px 0px black;
 }
 
-section#img01 {
+section.imagem {
     background-image: url(../imagens/roupa-sapato.jpg);
     background-position: center center;
 }
